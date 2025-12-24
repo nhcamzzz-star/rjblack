@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RJ Black | Gallos de Pelea</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #0f0f0f; color: #fff; }
+
+    header {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #1f1f1f;
+    }
+
+    header h1 { color: #fff; letter-spacing: 2px; }
+    header p { color: #aaa; }
+
+    .carousel {
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(0); }
+      36% { transform: translateX(-100%); }
+      66% { transform: translateX(-100%); }
+      69% { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #161616;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #222;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .price {
+      color: #4CAF50;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background: #25D366;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RJ BLACK</h1>
+  <p>Gallos de pelea de alta calidad</p>
+</header>
+
+<section class="carousel">
+  <div class="slides">
+    <img src="https://via.placeholder.com/1200x350?text=RJ+Black+1">
+    <img src="https://via.placeholder.com/1200x350?text=RJ+Black+2">
+    <img src="https://via.placeholder.com/1200x350?text=RJ+Black+3">
+  </div>
+</section>
+
+<section class="container">
+  <h2>Gallos en venta</h2>
+  <br>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Gallo+Giro">
+      <div class="card-content">
+        <h3>Gallo Giro</h3>
+        <p class="price">$5,000 MXN</p>
+        <a class="buy-btn" href="https://wa.me/521XXXXXXXXXX">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Gallo+Kelso">
+      <div class="card-content">
+        <h3>Gallo Kelso</h3>
+        <p class="price">$6,500 MXN</p>
+        <a class="buy-btn" href="https://wa.me/521XXXXXXXXXX">Comprar</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 RJ Black
+</footer>
+
+</body>
+</html>
